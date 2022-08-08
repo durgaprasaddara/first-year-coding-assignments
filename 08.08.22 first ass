@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,rem,ecount=0,ocount=0,t;
+    printf("enter the number:\n");
+    scanf("%d",&n);
+    t=n;
+    while(n>0)
+    {
+        rem=n%10;
+        if(rem%2==0)
+            ecount++;
+            else
+            {
+            ocount++;
+            }
+        n=n/10;
+        
+    }
+    printf("%d of even count is:%d\n",t,ecount);
+    printf("%d of odd count is:%d\n",t,ocount);
+    if(ecount==ocount)
+    {
+        printf("fancy number");
+    }
+    return 0;
+}
