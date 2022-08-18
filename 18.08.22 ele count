@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	int arr[]={20,6,11,8,59,11,13,10,17,99};
+	int len=sizeof(arr)/sizeof(int);
+	int i,n,cnt=0;
+	scanf("%d",&n); // search ele
+	for(i=0;i<len;i++){
+		if(arr[i]==n)cnt++;
+	}
+	printf("\nPresent %d times",cnt);
+	
+	return 0;
+}
