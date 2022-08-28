@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    int count=0,i,j;
+    char s1[20],s2[20],len;
+    printf("enter the string 1");
+    scanf("%s",s1);
+    printf("enter the second string");
+    scanf("%s",s2);
+    len=strlen(s1);
+    for(i=0;s1[i]!=0;i++)
+    {
+        for(j=0;s2[j]!=0;j++)
+        {
+            if(s1[j]==s2[i])
+            count++;
+        }
+    }
+    if(len==count)
+    printf("given strings is ANAGRAM");
+    else 
+    printf(" not a anagram strings\n");
+    return 0;
+}
